@@ -1,0 +1,11 @@
+{
+  "name": "neflixclone",
+  "version": "1.0.0",
+  "description": "Netflix Clone for Stige internship",
+  "main": "home.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Navadeepan",
+  "license": "ISC"
+}
