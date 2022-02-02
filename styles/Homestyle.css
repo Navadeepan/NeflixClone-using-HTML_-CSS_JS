@@ -320,23 +320,23 @@ border: 4px solid #222;
 
 
 .accordion-wrapper {
-width: 950px;
-margin: auto;
-padding: auto;/*70px 45px;*/
+margin: 1.25em auto;
+max-width: 850px;
+padding: 70px 45px;
 display: flex;
 flex-direction: column;
 }
 
-@media (max-width: 550px) {
+@media (max-width: auto) {
 .accordion-wrapper {
-  max-width: initial;
+  max-width: inherit;
   padding: 70px 20px;
 }
 }
 
 .accordion {
-  width: 940px;
-  margin:auto;
+  width: 75%;
+  margin: auto;
   padding: 70px 45px;
   display: flex;
   flex-direction: column;
@@ -366,9 +366,17 @@ text-align: center;
 }
 
 .accordion-wrapper .accordion-item {
+width: auto;
 margin-bottom: 10px;
 position: relative;
+font-size: auto;
 }
+
+@media (max-width: 550px) {
+  .accordion-item {
+    font-size: auto;
+  }
+  }
 
 .accordion-wrapper .accordion-header {
 background: #303030;
