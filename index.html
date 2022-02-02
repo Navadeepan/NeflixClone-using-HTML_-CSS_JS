@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=1280, initial-scale=1">
     <meta name="description" content="Netflix Clone Built Using React" />
     <link rel="icon" href="logo\favicon.ico" type="image/x-icon" />
     <link href="styles\Homestyle.css" type="text/css" rel="stylesheet" />
@@ -190,6 +191,12 @@
           this.classList.toggle('active')
         })
       }
+    </script>
+    <script>
+      var siteWidth = 1280;
+      var scale = screen.width / siteWidth;
+
+      document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=' + siteWidth + ', initial-scale=' + scale + '');
     </script>
   </body>
 </html>
